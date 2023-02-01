@@ -1,0 +1,10 @@
+<!-- REUSING THE BOILER PLATE WE HAVE USED IN PREVIOUS APPLICATIONS -->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+</Project>
