@@ -40,7 +40,9 @@ class PhoneBook{
                     Console.WriteLine("Goodbye Me dear User");
                 } 
                 else{
-                    // else, call the Main Branch again
+                    // else, call the Main Branch again to restart the application
+                    Console.WriteLine("To end the execution of the Application completely, press Ctrl + C");
+
                     Main();
                 }
             }
@@ -85,6 +87,26 @@ class PhoneBook{
     }
 
     static void LookUpContact(){
-        // nothing here yet
+        // writing a line telling user its the LookUpContact section of the Application they're in
+        Console.WriteLine("LOOKUP CONTACT");
+
+        //  asking user for the number they want to look up nd storing it in a string variable with Console.ReadLine() method
+        Console.WriteLine("Whose number would you like to look up?");
+        string friend = Console.ReadLine();
+
+        if(phoneNumbers.ContainsKey(friend)){
+            // picking up the user's name to showcase user that they've truly stored the contact details in the past
+            // after querying our dictionary with COntainsKey() method, depending on the value of the boolean we either print
+            // the contact information or alert the user that the contact name they are looking for does not exist
+            
+            string alreadyStoredContact = phoneNumbers[friend];
+            Console.WriteLine(friend + "\'s phone number is " + alreadyStoredContact);
+        }
+        else{
+            Console.WriteLine("That Person is not in your Phone Book.");
+        }
+        // after the Method has been completed, we call on Main() to start the program over
+
+        Main();
     }
 }
