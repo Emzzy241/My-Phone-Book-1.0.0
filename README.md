@@ -9,7 +9,7 @@
 * .NET6.0 Framework
 
 ## Description
-_This is a basic C# application for adding contacts into a phonebook, you can add as many contacts as possible, and WAIT THERE's MORE!!! You can look up a specific contact :)..... All you just have to do is to input the Person's name and my beautiful application determines whether you already have that contact saved up or not._
+_This is a basic C# application for adding contacts into a phonebook, you can add as many contacts as possible, and WAIT THERE's MORE!!! You can look up a specific contact :)..... All you just have to do is to input the Person's name and my beautiful application determines whether you already have that contact saved up or not. This application is mainly to explore how to use dictionaries in an application_
 
 ## Setup/Installation
 * Open your git bash Terminal to Clone the Project with a (git clone _REPOSITORY_NAME_)
