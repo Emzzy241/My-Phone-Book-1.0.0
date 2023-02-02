@@ -7,14 +7,14 @@ using System.Collections.Generic; //THis tells our program to load the part of t
 class PhoneBook{
 
 // our phoneNumbers dictionary is scoped outside any methods and this is only because we want it to be accessible all through the class{phoneBook) scope
-// this is to ensure it has the correct scope, thanks to whagt we did here, methods declared in our class will be able to refer to it
+// this is to ensure it has the correct scope, thanks to what we did here, methods declared in our class will be able to refer to it
 // if it were inside another class, methods from this clas wouldn't be able to access it
 // a STATIC variable, this is sometimes referred to as a class variablebecause it is scoped to the level of the class
 // although, STATIC VARIABLES can be very useful, we should only use them if the variables need to be accessed everywhee in the class, otherwise we should try to scope our variables more locallyinside of methods
 
     public static Dictionary<string, string> phoneNumbers = new Dictionary<string, string>(){};
     // in the above we created a dictionary that can only save a string as a key to another string as the value
-    
+
 
     static void Main(){
         Console.WriteLine("Main Menu");
@@ -79,7 +79,13 @@ class PhoneBook{
         else{
             // if the contact doesn't exist already in our Dictionary, we call our Add() method on our dictionary(phoneNumbers) to add the name and number of our contact
             // if the boolean returns false, we add the contact to the dictionary with the code:
-            phoneNumbers.Add(name, number);
+            // phoneNumbers.Add(name, number);
+
+            // we can also use the square brckets way of addig contents to our Dictionary,
+            //  YOU can pick anyone, either the method way(with .Add() method) or the square bracket way to store contents in your DIctionary
+            
+            phoneNumbers[name] = number;
+            
         }
 
         // when the method has finished adding or displaying the contact, Main() is called again to send us back to the beginning, essentially looping the program until the user quits with(Ctrl + C)
