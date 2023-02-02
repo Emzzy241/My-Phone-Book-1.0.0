@@ -13,6 +13,8 @@ class PhoneBook{
 // although, STATIC VARIABLES can be very useful, we should only use them if the variables need to be accessed everywhee in the class, otherwise we should try to scope our variables more locallyinside of methods
 
     public static Dictionary<string, string> phoneNumbers = new Dictionary<string, string>(){};
+    // in the above we created a dictionary that can only save a string as a key to another string as the value
+    
 
     static void Main(){
         Console.WriteLine("Main Menu");
